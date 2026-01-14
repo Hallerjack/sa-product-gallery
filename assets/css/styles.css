@@ -56,7 +56,7 @@ body {
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   row-gap: 60px;
   column-gap: 50px;
 }
@@ -151,4 +151,53 @@ to {
     color: #007cba;
     border: solid 1px #007cba;
     transition: 0.3s;
+}
+
+
+/* RESPONSIVE */
+
+/* --- Tablet --- */
+
+@media (min-width: 577px) {
+    /* FILTERS */
+    
+    .products-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    
+    /* PRODUCTOS */
+    
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 30px;
+    }
+}
+
+/* --- Desk --- */
+
+@media (min-width: 992px) {
+    /* FILTERS */
+    
+    .products-filters {
+        display: flex;
+        justify-content: start;
+        gap: 0;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    
+    /* PRODUCTOS */
+    
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 50px;
+    }
 }
