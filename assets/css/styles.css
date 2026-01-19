@@ -16,11 +16,16 @@ body {
 .main-prod-grid h3 {
     color: black;
     font-weight: 700;
+    font-size: 1.6em;
 }
 
 .main-prod-grid h4 {
     text-decoration: line-through;
     color: grey;
+}
+
+.main-prod-grid p {
+    margin: 0;
 }
 
 .products-section {
@@ -120,32 +125,13 @@ to {
     z-index: 5;
     width: auto;
     background-color: rgb(244, 227, 70);
-    padding: 3px 20px;
+    padding: 0px;
     color: #000;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-/* POR TRABAJAR*/
-
-/* .sa-sale-label {
-    position: relative;
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: auto;
-    background-color: rgb(244, 227, 70);
-    border-radius: 150px;
-    padding: 3px 20px;
-    color: #000;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-}
- */
 .img-prod-card {
     width: 100%;
     height: 200px !important; 
@@ -223,6 +209,12 @@ to {
 /* --- Desk --- */
 
 @media (min-width: 992px) {
+    /* MAIN */
+
+    .main-prod-grid h3 {
+        font-size: 1.4em;
+    }
+
     /* FILTERS */
     
     .products-filters {
@@ -242,3 +234,23 @@ to {
         column-gap: 50px;
     }
 }
+
+/* POR TRABAJAR*/
+
+/* .sa-sale-label {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    background-color: rgb(244, 227, 70);
+    border-radius: 150px;
+    padding: 3px 20px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ */
